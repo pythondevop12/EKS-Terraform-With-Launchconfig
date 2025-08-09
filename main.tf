@@ -52,30 +52,6 @@ data "aws_ssm_parameter" "eks_ami" {
   name = "/aws/service/eks/optimized-ami/1.33/amazon-linux-2023/x86_64/standard/recommended/image_id"
 }
 
-# data "aws_ami" "eks_al2023" {
-#   most_recent = true
-#   owners      = ["602401143452"] # Amazon EKS AMI publisher
-
-#   filter {
-#     name   = "name"
-#     values = ["amazon-eks-node-al2023-x86_64-standard-1.33-v20250627"]
-#   }
-
-#   filter {
-#     name   = "architecture"
-#     values = ["x86_64"]
-#   }
-
-#   filter {
-#     name   = "virtualization-type"
-#     values = ["hvm"]
-#   }
-
-#   filter {
-#     name   = "root-device-type"
-#     values = ["ebs"]
-#   }
-# }
 
 
 
