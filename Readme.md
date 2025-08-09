@@ -24,3 +24,58 @@ The architecture includes:
 
 ## 📂 Project Structure
 
+```plaintext
+.
+├── modules/
+│   ├── vpc/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │
+│   ├── subnet/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │
+│   ├── network/                # Route tables, IGW, NAT
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │
+│   ├── iam/                     # Roles, Policies
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │
+│   ├── security_group/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │
+│   ├── eks-cluster/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │
+│   ├── launch_template/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │
+│   ├── nodegroup/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │
+│   └── aws_auth/
+│       ├── main.tf
+│       ├── variables.tf
+│       ├── outputs.tf
+│
+├── main.tf                      # Root module calling all submodules
+├── variables.tf
+├── outputs.tf
+├── terraform.tfvars             # Environment-specific values
+├── provider.tf                  # AWS provider & backend config
+├── versions.tf                  # Terraform & provider version constraints
+└── README.md
