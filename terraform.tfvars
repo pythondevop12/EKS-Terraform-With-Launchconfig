@@ -1,0 +1,11 @@
+cidr_block_val    = "10.0.0.0/16"
+eks_cluster_name  = "eks"
+instance_type     = "t3.medium"
+min_size          = 1
+max_size          = 3
+desired_size      = 2
+eks_NG            = "eks_NG"
+public_cidr_block = "0.0.0.0/0"
+launch_template   = "launchtemplate"
+account_id        = 247523262347
+region = "us-east-1"
