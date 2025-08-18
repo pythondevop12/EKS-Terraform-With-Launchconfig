@@ -7,5 +7,5 @@ desired_size      = 2
 eks_NG            = "eks_NG"
 public_cidr_block = "0.0.0.0/0"
 launch_template   = "launchtemplate"
-account_id        = 247523262347
+account_id        = <ACCOUNT_ID>
 region = "us-east-1"
